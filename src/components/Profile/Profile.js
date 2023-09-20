@@ -7,7 +7,7 @@ import CostumeTimeline, {
 import TimelineItem from "@mui/lab/TimelineItem/TimelineItem";
 import TimelineContent from "@mui/lab/TimelineContent/TimelineContent";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-import resumeData from "../../utils/resumeData";
+import resumeData from "../../Utils/resumeData";
 import CustomButton from "../Button/Button";
 import GetAppIcon from "@mui/icons-material/GetApp";
 
