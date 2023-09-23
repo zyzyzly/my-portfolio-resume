@@ -1,14 +1,17 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { HomeRounded, Telegram } from "@mui/icons-material";
-import { NavLink, withRouter } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import CustomButton from "../Button/Button";
-import resumeData from "../../utils/resumeData";
+import resumeData from "../../Utils/ResumeData";
+
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./Header.css";
 
-const Header = (props) => {
-  const pathName = props.location?.pathName;
+const Header = () => {
+  const history = useHistory(); // Use useHistory here
+  const pathName = history.location.pathname; // Access location directly
 
   return (
     <Navbar expand="lg" sticky="top" className="header">
@@ -62,4 +65,4 @@ const Header = (props) => {
   );
 };
 
-export default withRouter(Header);
+export default Header;

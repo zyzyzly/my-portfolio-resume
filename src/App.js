@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Grid } from "@mui/material";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; // Import BrowserRouter
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Profile from "./components/Profile/Profile";
 import Header from "./components/Header/Header";
 import Portfolio from "./pages/Portfolio/Portfolio";
+
 import Resume from "./pages/Resume/Resume";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
