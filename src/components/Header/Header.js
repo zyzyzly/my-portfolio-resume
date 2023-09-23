@@ -8,6 +8,7 @@ import resumeData from "../../Utils/ResumeData";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./Header.css";
+import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
 
 const Header = () => {
   const history = useHistory(); // Use useHistory here
@@ -16,7 +17,7 @@ const Header = () => {
   return (
     <Navbar expand="lg" sticky="top" className="header">
       {/* Home link*/}
-      <Nav.Link as={NavLink} to="/">
+      <Nav.Link as={NavLink} to="/" className="header_navlink">
         <Navbar.Brand className="header_home">
           <HomeRounded />
         </Navbar.Brand>
@@ -25,7 +26,7 @@ const Header = () => {
       <Navbar.Toggle />
 
       <Navbar.Collapse>
-        <Nav>
+        <Nav className="header_left">
           {/* Resume Link */}
           <Nav.Link
             as={NavLink}
@@ -65,4 +66,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default withRouter(Header);
